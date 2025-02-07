@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose an Option</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #fd6585, #0d25b9);
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(to right, #fd6585, #0d25b9);
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            padding-top: auto;
+            margin: 20px auto;
+            width: 80%;
+            
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .book-list {
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .book {
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            padding: 15px;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            background-size: cover;
+        }
+        .book:hover {
+            transform: scale(1.05);
+            background: linear-gradient(to right, #ff758c, #ff7eb3);}
+        .borrow-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .borrow-btn:hover {
+            background-color: #1a252f;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #2980b9;
+        }
+        /* #box1{ background-image: url(https://www.tckpublishing.com/wp-content/uploads/2018/11/ManyBooks-e1590111391262.png);}
+        #box2{ background-image: url(https://cdn.freebiesupply.com/images/thumbs/1x/internet-archive-logo.png);}
+        #box3{ background-image: url(https://th.bing.com/th/id/OIP.JX_aajc9rmUj6vF57mrHfgAAAA?rs=1&pid=ImgDetMain);} */
+        
+    </style>
+</head>
+<body>
+    <header><h1>Read a Book</h1></header>
+    <div class="container">
+        <h2>Available Options</h2>
+        <div class="book-list">
+            <div class="book" id="box1">
+                <h3>1. Many Books</h3>
+                <a href="https://manybooks.net/"><button class="borrow-btn">Go to website</button></a>
+            </div>
+            <div class="book" id="box2">
+                <h3>2. Internet Archive</h3>
+                <a href="https://archive.org/"><button class="borrow-btn">Go to website</button></a>
+            </div>
+            <div class="book" id="box3">
+                <h3>3. Open Library</h3>
+                <a href="https://openlibrary.org/"><button class="borrow-btn">Go to website</button></a>
+            </div>
+        </div>
+        <a href="index.html" class="back-link"> Back to Home</a>
+    </div>
+</body>
+</html>
